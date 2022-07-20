@@ -1,8 +1,11 @@
 
 # Inpainting at Modern Camera Resolution by Guided PatchMatch with Auto-Curation
 
-This repository contains the code and model for the curation module described in our paper:
+
+
+This repository contains the code and model for the curation module as well as test dataset described in our paper:
 Inpainting at Modern Camera Resolution by Guided PatchMatch with Auto-Curation by Lingzhi Zhang et al.
+
 
 
 ## High-Resolution Dataset
