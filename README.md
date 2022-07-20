@@ -20,6 +20,18 @@ Curator preferences for (a, b), higher is better:  tensor([ 0.4453, -0.4453], de
 
 If you compare with this in a scientific publication then please cite the below citation.
 
+## BibTex Citation
+
+```bash
+@InProceedings{Zhang_2022_guided_pm,
+author = {Zhang, Lingzhi and Barnes, Connelly and Amirghodsi, Sohrab and Wampler, Kevin and Shechtman, Eli and Lin, Zhe and Shi, Jianbo},
+title = {Inpainting at Modern Camera Resolution by Guided PatchMatch with Auto-Curation},
+booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+month = {October},
+year = {2022}
+}
+```
+
 ## License
 
 Adobe Research License Terms For Redistributable Adobe Materials
@@ -39,15 +51,3 @@ modify, reverse engineer, or decompile such Research Materials except as permitt
 ALL RISKS ASSOCIATED WITH THEIR USE. IN NO EVENT WILL ANYONE BE LIABLE TO YOU FOR ANY ACTUAL,
 INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN CONNECTION WITH USE OF
 THE RESEARCH MATERIALS.
-
-## BibTex Citation
-
-```bash
-@InProceedings{Zhang_2022_guided_pm,
-author = {Zhang, Lingzhi and Barnes, Connelly and Amirghodsi, Sohrab and Wampler, Kevin and Shechtman, Eli and Lin, Zhe and Shi, Jianbo},
-title = {Inpainting at Modern Camera Resolution by Guided PatchMatch with Auto-Curation},
-booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
-month = {October},
-year = {2022}
-}
-```
