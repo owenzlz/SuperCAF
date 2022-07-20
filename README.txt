@@ -51,3 +51,20 @@ month = {October},
 year = {2022}
 }
 ```
+
+After downloading, the dataset is structured as follows: 
+```bash
+- [perceptual artifacts dataset root]
+    |- trainset
+        |- images
+        |- masks
+        |- labels
+    |- valset
+        |- images
+        |- masks
+        |- labels
+    |- testset
+        |- images
+        |- masks
+        |- labels
+```
