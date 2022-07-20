@@ -49,7 +49,6 @@ year = {2022}
 
 Adobe Research License Terms For Redistributable Adobe Materials
 
-```bash
 1. You may use, reproduce, modify, and display the research materials provided under this license (the
 "Research Materials") solely for noncommercial purposes. Noncommercial purposes include academic
 research, teaching, and testing, but do not include commercial licensing or distribution, development of
@@ -65,4 +64,4 @@ modify, reverse engineer, or decompile such Research Materials except as permitt
 ALL RISKS ASSOCIATED WITH THEIR USE. IN NO EVENT WILL ANYONE BE LIABLE TO YOU FOR ANY ACTUAL,
 INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN CONNECTION WITH USE OF
 THE RESEARCH MATERIALS.
-```
+
