@@ -1,68 +1,45 @@
-# PA4Inpaint
-[Project Page] |  [Paper] | [Bibtex]
-<!-- (https://chail.github.io/latent-composition/) -->
 
-<img src="https://github.com/owenzlz/PA4Inpaint/blob/main/images/teaser.png" style="width:800px;">
+# Inpainting at Modern Camera Resolution by Guided PatchMatch with Auto-Curation
 
-**Perceptual Artifacts Localization for Inpainting**\
-*European Conference on Computer Vision (ECCV), 2022, Oral Presentation*\
-[Lingzhi Zhang](https://owenzlz.github.io/), [Yuqian Zhou](https://yzhouas.github.io/), [Connelly Barnes](http://www.connellybarnes.com/work/), [Sohrab Amirghodsi](https://scholar.google.com/citations?user=aFrtZOIAAAAJ&hl=en), [Zhe Lin](https://sites.google.com/site/zhelin625/), [Eli Shechtman](https://research.adobe.com/person/eli-shechtman/), [Jianbo Shi](https://www.cis.upenn.edu/~jshi/)\
-University of Pennsylvania, Adobe Research/ART
+This repository contains the code and model for the curation module described in our paper:
+Inpainting at Modern Camera Resolution by Guided PatchMatch with Auto-Curation by Lingzhi Zhang et al.
 
-Note: Due to commercial reasons, we only release our inference code in 'torchscript' format and half of the labeled datasets. 
+See curator_test_torchscript.py for example code. It is licensed by Adobe for non-commercial
+use only: see the below license.
 
-## Prerequisites
-- Linux
-- Python 3
-- NVIDIA GPU + CUDA CuDNN
+An example of running on the provided images (the output should match the below output):
 
-## Setup
-- Clone this repo:
-```bash
-git clone https://github.com/owenzlz/PA4Inpaint
-```
+python curator_test_torchscript.py a.png b.png mask.png
+Curator preferences for (a, b), higher is better:  tensor([ 0.4453, -0.4453], device='cuda:0', grad_fn=<SubBackward0>)
 
-- Install dependencies (Since we use torchscript, we can bypass the mmsegmentation packages.):
-```bash
-pip install torch torchvision
-```
+If you compare with this in a scientific publication then please cite the below citation.
 
-## Checkpoints
+# License
 
-- Download 'torchscript' checkpoints:
-```bash
-bash download_checkpoints.sh
-```
+Adobe Research License Terms For Redistributable Adobe Materials
 
-## Quick Usage [TODO]
+1. You may use, reproduce, modify, and display the research materials provided under this license (the
+"Research Materials") solely for noncommercial purposes. Noncommercial purposes include academic
+research, teaching, and testing, but do not include commercial licensing or distribution, development of
+commercial products, or any other activity which results in commercial gain. You may not redistribute the
+Research Materials.
 
-Run the following command for inference. 
+2. You agree to (a) comply with all laws and regulations applicable to your use of the Research Materials under
+this license, including but not limited to any import or export laws; (b) preserve any copyright or other
+notices from the Research Materials; and (c) for any Research Materials in object code, not attempt to
+modify, reverse engineer, or decompile such Research Materials except as permitted by applicable law.
 
-- Inference on a single image:
-```bash
-python pa4inpaint.py \
---img_file ./demo/images/xxx.jpg \
---result_file ./demo/results/yyy.png
-```
+3. THE RESEARCH MATERIALS ARE PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, AND YOU ASSUME
+ALL RISKS ASSOCIATED WITH THEIR USE. IN NO EVENT WILL ANYONE BE LIABLE TO YOU FOR ANY ACTUAL,
+INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN CONNECTION WITH USE OF
+THE RESEARCH MATERIALS.
 
-- Inference on a batch of images:
-```bash
-python pa4inpaint.py \
---img_dir ./demo/images \
---result_dir ./demo/results
-```
+# BibTex Citation
 
-<img src="https://github.com/owenzlz/PA4Inpaint/blob/main/images/seg_results.png" style="width:800px;">
-
-
-## Datasets
-
-If you want to access our labeled perceptual artifacts localization dataset, you may use the following commands to download. Running 
-inference code does not require to download this. 
-
-<img src="https://github.com/owenzlz/PA4Inpaint/blob/main/images/user_labels.png" style="width:800px;">
-
-- Download our datasets
-```bash
-bash download_datasets.sh
-```
+@InProceedings{Zhang_2022_guided_pm,
+author = {Zhang, Lingzhi and Barnes, Connelly and Amirghodsi, Sohrab and Wampler, Kevin and Shechtman, Eli and Lin, Zhe and Shi, Jianbo},
+title = {Inpainting at Modern Camera Resolution by Guided PatchMatch with Auto-Curation},
+booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+month = {October},
+year = {2022}
+}
