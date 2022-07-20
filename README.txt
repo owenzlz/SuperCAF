@@ -4,17 +4,23 @@
 This repository contains the code and model for the curation module described in our paper:
 Inpainting at Modern Camera Resolution by Guided PatchMatch with Auto-Curation by Lingzhi Zhang et al.
 
+
+## Curation Module
+
 See curator_test_torchscript.py for example code. It is licensed by Adobe for non-commercial
 use only: see the below license.
 
 An example of running on the provided images (the output should match the below output):
 
+```bash
 python curator_test_torchscript.py a.png b.png mask.png
+```
+
 Curator preferences for (a, b), higher is better:  tensor([ 0.4453, -0.4453], device='cuda:0', grad_fn=<SubBackward0>)
 
 If you compare with this in a scientific publication then please cite the below citation.
 
-# License
+## License
 
 Adobe Research License Terms For Redistributable Adobe Materials
 
@@ -34,8 +40,9 @@ ALL RISKS ASSOCIATED WITH THEIR USE. IN NO EVENT WILL ANYONE BE LIABLE TO YOU FO
 INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN CONNECTION WITH USE OF
 THE RESEARCH MATERIALS.
 
-# BibTex Citation
+## BibTex Citation
 
+```bash
 @InProceedings{Zhang_2022_guided_pm,
 author = {Zhang, Lingzhi and Barnes, Connelly and Amirghodsi, Sohrab and Wampler, Kevin and Shechtman, Eli and Lin, Zhe and Shi, Jianbo},
 title = {Inpainting at Modern Camera Resolution by Guided PatchMatch with Auto-Curation},
@@ -43,3 +50,4 @@ booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
 month = {October},
 year = {2022}
 }
+```
