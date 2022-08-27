@@ -10,11 +10,16 @@ Inpainting at Modern Camera Resolution by Guided PatchMatch with Auto-Curation b
 
 ## High-Resolution Dataset
 
-You can use the command below to download our high-resolution testset (images and masks) used in this paper. 
+You can use the command below to download our high-resolution testset (images and masks) used in this paper, as well as inpainted results from all methods. 
 
 - Download our datasets
 ```bash
 bash download_datasets.sh
+```
+
+- Download results
+```bash
+bash download_results.sh
 ```
 
 
